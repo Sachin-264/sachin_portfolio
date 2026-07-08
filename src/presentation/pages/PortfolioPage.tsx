@@ -574,7 +574,9 @@ export const PortfolioPage: React.FC = () => {
                   transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] as [number, number, number, number], delay: 0.2 }}
                   style={{
                     transform: `translate3d(${xPortrait}px, ${yPortrait}px, 0) scale(${scalePortrait})`,
-                    transformOrigin: 'bottom center'
+                    transformOrigin: 'bottom center',
+                    borderRadius: borderRadiusPortrait,
+                    overflow: progress > 0.1 ? 'hidden' : 'visible'
                   }}
                 >
                   <motion.img
