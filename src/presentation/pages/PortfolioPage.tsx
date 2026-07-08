@@ -598,11 +598,6 @@ export const PortfolioPage: React.FC = () => {
                 </div>
               </div>
 
-              {/* Bottom row labels */}
-              <div className={styles.themeBBottomRow}>
-                <span className={styles.themeBBottomLabel}>© Sachin 2026</span>
-                <span className={styles.themeBBottomLabel}>(Scroll down)</span>
-              </div>
             </main>
 
             {/* Full-width white band for the About section */}
