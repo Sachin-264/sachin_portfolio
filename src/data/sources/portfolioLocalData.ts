@@ -86,11 +86,11 @@ export const selectedWorkData: Project[] = [
     description: 'A production school-bus tracking system integrated with custom GPS IoT hardware. Features real-time bidirectional WebSocket synchronization, live location maps, and high-performance cross-platform apps.',
     category: 'MOBILE APP (IOT)',
     tags: ['FLUTTER', 'GETX', 'NODE.JS', 'POSTGRESQL', 'WEBSOCKETS', 'GOOGLE MAPS'],
-    imageUrl: '/project-busly/main image.png',
+    imageUrl: 'project-busly/main image.png',
     projectUrl: 'https://play.google.com/store/apps/details?id=com.malvi.busly&pcampaignid=web_share',
     gitUrl: '2025',
-    logoUrl: '/project-busly/logo.png',
-    hardwareUrl: '/project-busly/Hardware.png',
+    logoUrl: 'project-busly/logo.png',
+    hardwareUrl: 'project-busly/Hardware.png',
     timeline: '3 Months',
     architectureTree: `System Ecosystem:
 ├── Super-Admin Panel (Multi-School Central Control)
@@ -113,12 +113,12 @@ export const selectedWorkData: Project[] = [
       'Driver Telemetry & Notifications: Real-time driver logs, speed limit violation monitoring, and direct push alerts managed via Node.js WebSockets and a PostgreSQL DB.'
     ],
     screenshots: [
-      '/project-busly/image.png',
-      '/project-busly/image copy.png',
-      '/project-busly/image copy 2.png',
-      '/project-busly/image copy 3.png',
-      '/project-busly/image copy 4.png',
-      '/project-busly/image copy 5.png'
+      'project-busly/image.png',
+      'project-busly/image copy.png',
+      'project-busly/image copy 2.png',
+      'project-busly/image copy 3.png',
+      'project-busly/image copy 4.png',
+      'project-busly/image copy 5.png'
     ]
   },
   {
@@ -127,10 +127,10 @@ export const selectedWorkData: Project[] = [
     description: 'An AI-powered automated caption generator built for short-form video creators. Leverages native-level engine bindings for high-fidelity audio/video rendering, multithreaded processing, and AdSense monetization.',
     category: 'SAAS VIDEO TECH',
     tags: ['FLUTTER', 'GETX', 'PLATFORM CHANNELS', 'NATIVE ANDROID/IOS', 'C++', 'ADSENSE'],
-    imageUrl: '/projet_caption/Main.png',
+    imageUrl: 'projet_caption/Main.png',
     projectUrl: '#',
     gitUrl: '2026',
-    logoUrl: '/projet_caption/logo.jpeg',
+    logoUrl: 'projet_caption/logo.jpeg',
     timeline: '1 Week',
     colorTheme: 'monochrome',
     longDescription: 'An advanced, high-performance automated caption generator built specifically to empower short-form creators. Developed and delivered within an extremely fast 1-week timeline, the solution leverages native Platform Channels to interface directly with low-level C++ rendering pipelines on Android/iOS from a responsive Flutter frontend managed by reactive GetX state. While most caption generators in the market require expensive monthly subscriptions, Caption.IO is completely free (unpaid), enabling indie creators and beginners to easily generate high-fidelity, stylistically animated subtitles without budget constraints.',
@@ -142,11 +142,11 @@ export const selectedWorkData: Project[] = [
       'High-Quality 4K Export: Export rendering runs locally on the device at 60fps for crisp video outputs.'
     ],
     screenshots: [
-      '/projet_caption/image.png',
-      '/projet_caption/image copy.png',
-      '/projet_caption/image copy 2.png',
-      '/projet_caption/image copy 3.png',
-      '/projet_caption/image copy 4.png'
+      'projet_caption/image.png',
+      'projet_caption/image copy.png',
+      'projet_caption/image copy 2.png',
+      'projet_caption/image copy 3.png',
+      'projet_caption/image copy 4.png'
     ]
   },
   {
@@ -155,13 +155,13 @@ export const selectedWorkData: Project[] = [
     description: 'A dual-platform environmental telemetry application developed for Countronics. Connects to Airveda PM2.5 sensors via low-latency WiFi sockets to configure network settings and log real-time data.',
     category: 'HARDWARE & TELEMETRY',
     tags: ['FLUTTER', 'PHP API', 'MYSQL', 'WIFI SOCKETS', 'TELEMETRY'],
-    imageUrl: '/project_countron/main.png',
+    imageUrl: 'project_countron/main.png',
     projectUrl: 'https://www.aquare.co.in/mobileAPI/countron/#/login',
     projectUrlLabel: 'Visit Web Console',
     appStatus: 'Delivered to Client',
     gitUrl: '2025',
-    logoUrl: '/project_countron/logo.png',
-    hardwareUrl: '/project_countron/hardware.png',
+    logoUrl: 'project_countron/logo.png',
+    hardwareUrl: 'project_countron/hardware.png',
     timeline: '4 Months',
     colorTheme: 'blue',
     architectureTree: `Countron Telemetry System:
@@ -183,15 +183,15 @@ export const selectedWorkData: Project[] = [
       'Custom PHP API Layer: Built secure REST endpoints managing user sessions, device tokens, system calibration records, and telemetry log exports.'
     ],
     screenshots: [
-      '/project_countron/image.png',
-      '/project_countron/image copy.png',
-      '/project_countron/image copy 2.png',
-      '/project_countron/image copy 3.png',
-      '/project_countron/image copy 4.png',
-      '/project_countron/image copy 5.png',
-      '/project_countron/image copy 6.png',
-      '/project_countron/image copy 7.png',
-      '/project_countron/image copy 8.png'
+      'project_countron/image.png',
+      'project_countron/image copy.png',
+      'project_countron/image copy 2.png',
+      'project_countron/image copy 3.png',
+      'project_countron/image copy 4.png',
+      'project_countron/image copy 5.png',
+      'project_countron/image copy 6.png',
+      'project_countron/image copy 7.png',
+      'project_countron/image copy 8.png'
     ]
   },
   {
@@ -200,12 +200,12 @@ export const selectedWorkData: Project[] = [
     description: 'A Panchakarma Patient Management & Therapy Scheduling system built for the Smart India Hackathon (SIH), reaching the top 50 in internal college selection. Integrates automated scheduling, precaution alerts, Razorpay, and Firebase messaging.',
     category: 'MEDTECH / HEALTHCARE',
     tags: ['FLUTTER', 'FIREBASE', 'RAZORPAY', 'AI CHATBOT', 'SCHEDULING', 'MEDTECH'],
-    imageUrl: '/project_ayu/main.png',
+    imageUrl: 'project_ayu/main.png',
     projectUrl: '#',
     projectUrlLabel: 'Hackathon Submission',
     appStatus: 'SIH Selection (Top 50)',
     gitUrl: '2026',
-    logoUrl: '/project_ayu/logo.png',
+    logoUrl: 'project_ayu/logo.png',
     timeline: '2 Weeks',
     colorTheme: 'teal',
     architectureTree: `AyurSutra Platform:
@@ -227,15 +227,15 @@ export const selectedWorkData: Project[] = [
       'Real-Time Progress Visualization: Interactive progress tracking with visual tools showing therapy milestones, recovery tracking, and feedback loops.'
     ],
     screenshots: [
-      '/project_ayu/1.jpg',
-      '/project_ayu/2.jpg',
-      '/project_ayu/3.jpg',
-      '/project_ayu/4.jpg',
-      '/project_ayu/5.jpg',
-      '/project_ayu/6.jpg',
-      '/project_ayu/7.jpg',
-      '/project_ayu/8.jpg',
-      '/project_ayu/9.jpg'
+      'project_ayu/1.jpg',
+      'project_ayu/2.jpg',
+      'project_ayu/3.jpg',
+      'project_ayu/4.jpg',
+      'project_ayu/5.jpg',
+      'project_ayu/6.jpg',
+      'project_ayu/7.jpg',
+      'project_ayu/8.jpg',
+      'project_ayu/9.jpg'
     ]
   },
   {
@@ -244,18 +244,18 @@ export const selectedWorkData: Project[] = [
     description: 'A high-performance, 100% local compliance Q&A engine built to answer regulatory questions privately. Parses PDFs, indexes embeddings in FAISS, and performs offline inference using LangChain and Ollama.',
     category: 'AI & BACKEND ENGINEERING',
     tags: ['PYTHON', 'FASTAPI', 'LANGCHAIN', 'FAISS', 'OLLAMA', 'RAG'],
-    imageUrl: '/projext_RAG/Main.png',
+    imageUrl: 'projext_RAG/Main.png',
     projectUrl: '#',
     projectUrlLabel: 'API Documentation',
     appStatus: 'Completed Backend',
     gitUrl: '2026',
-    logoUrl: '/projext_RAG/logo.png',
+    logoUrl: 'projext_RAG/logo.png',
     timeline: '1 Week',
     colorTheme: 'blue',
     extraSectionTitle: 'Local Directory Structure',
     extraSectionSub: 'Workspace & Training Data Layout',
     extraSectionDesc: 'The compliance engine operates locally by parsing files placed directly in the knowledge/ folder, indexing embeddings under faiss_local_db/, and loading source code in app.py and main.py.',
-    extraSectionUrl: '/projext_RAG/folder_struct.png',
+    extraSectionUrl: 'projext_RAG/folder_struct.png',
     architectureTree: `Local RAG Pipeline:
 ├── Document Ingest (PDFs in /knowledge)
 │   └── PyPDF Loader & Recursive Character Text Splitter
@@ -274,9 +274,9 @@ export const selectedWorkData: Project[] = [
       'FastAPI Query API: Exposes a high-performance HTTP REST interface with startup model verification checks for easy front-end integration.'
     ],
     screenshots: [
-      '/projext_RAG/image.png',
-      '/projext_RAG/image copy.png',
-      '/projext_RAG/image copy 2.png'
+      'projext_RAG/image.png',
+      'projext_RAG/image copy.png',
+      'projext_RAG/image copy 2.png'
     ]
   }
 ];
@@ -326,8 +326,8 @@ export const testimonialsData: TestimonialItem[] = [
     name: 'Vishal Jain',
     role: 'Director',
     quote: "Sachin's expertise in development and UI design has been game-changing for Moneyshine. He communicates extremely well and delivers top-notch code that is easy to scale.",
-    brandLogo: '/Testimonial/moneyshine.png',
-    avatarUrl: '/Testimonial/person_moneyshine.png'
+    brandLogo: 'Testimonial/moneyshine.png',
+    avatarUrl: 'Testimonial/person_moneyshine.png'
   },
   {
     id: '2',
@@ -335,8 +335,8 @@ export const testimonialsData: TestimonialItem[] = [
     name: 'Prashant Gupta',
     role: 'Director',
     quote: "Sachin delivered an exceptional telemetry platform. From ESP8266 WiFi integration to the final Flutter app, his full-stack expertise helped us ship ahead of schedule.",
-    brandLogo: '/Testimonial/countronics.png',
-    avatarUrl: '/Testimonial/person_countr.png'
+    brandLogo: 'Testimonial/countronics.png',
+    avatarUrl: 'Testimonial/person_countr.png'
   }
 ];
 

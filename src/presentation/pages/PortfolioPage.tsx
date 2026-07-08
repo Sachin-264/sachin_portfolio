@@ -268,7 +268,7 @@ export const PortfolioPage: React.FC = () => {
                 <div className={styles.photoCardWrapper}>
                   <div className={styles.mainPhotoWrapper}>
                     <img
-                      src="/sachin-hero.png"
+                      src="sachin-hero.png"
                       alt={profileData.name}
                       className={styles.mainPhoto}
                     />
@@ -578,7 +578,7 @@ export const PortfolioPage: React.FC = () => {
                   }}
                 >
                   <motion.img
-                    src="/sachin-hero.png"
+                    src="sachin-hero.png"
                     alt={profileData.name}
                     className={styles.themeBPortrait}
                     initial={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)", opacity: 0 }}
@@ -628,7 +628,7 @@ export const PortfolioPage: React.FC = () => {
                   {/* Colored card — portrait morphs and lands here on scroll */}
                   <div className={styles.themeBAboutImageWrapper}>
                     <img
-                      src="/sachin-hero.png"
+                      src="sachin-hero.png"
                       alt={profileData.name}
                       className={styles.themeBAboutMobileImage}
                     />
