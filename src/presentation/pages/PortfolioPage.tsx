@@ -578,7 +578,9 @@ export const PortfolioPage: React.FC = () => {
                     transformOrigin: 'bottom center',
                     borderRadius: borderRadiusPortrait,
                     overflow: progress > 0.1 ? 'hidden' : 'visible',
-                    aspectRatio: aspectRatioPortrait
+                    aspectRatio: aspectRatioPortrait,
+                    isolation: 'isolate',
+                    WebkitMaskImage: progress > 0.1 ? 'radial-gradient(white, black)' : 'none'
                   }}
                 >
                   <motion.img
