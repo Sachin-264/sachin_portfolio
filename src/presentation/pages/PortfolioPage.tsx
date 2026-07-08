@@ -140,13 +140,11 @@ export const PortfolioPage: React.FC = () => {
 
   // Scroll morphing transforms for the single portrait cutout using reactive state
   const progress = Math.min(1, Math.max(0, scrollTop / 420)); // Completes faster
-  const scalePortrait = isMobile ? 1 : (1 - progress * 0.16); // Scales from 1.0 to 0.84 (370px)
+  const widthPortrait = isMobile ? 320 : (440 - progress * 70); // Animate width from 440px to 370px
   const xPortrait = isMobile ? 0 : (progress * 280); // Shifts right
   const yPortrait = isMobile ? 0 : (progress * 565); // Translates down
   const borderRadiusPortrait = isMobile ? '2rem' : `${progress * 2}rem`;
   const aspectRatioPortrait = isMobile ? 0.93 : (0.85 + progress * 0.08);
-  const heroOpacity = isMobile ? 1 : Math.max(0, Math.min(1, (1 - progress) / 0.15));
-  const aboutOpacity = isMobile ? 1 : Math.max(0, Math.min(1, (progress - 0.85) / 0.15));
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -573,17 +571,15 @@ export const PortfolioPage: React.FC = () => {
                 <motion.div
                   className={styles.themeBPortraitContainer}
                   initial={{ opacity: 0 }}
-                  animate={{ opacity: heroOpacity }}
+                  animate={{ opacity: 1 }}
                   transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] as [number, number, number, number], delay: 0.2 }}
                   style={{
-                    transform: `translate3d(${xPortrait}px, ${yPortrait}px, 0) scale(${scalePortrait})`,
+                    width: isMobile ? undefined : widthPortrait,
+                    transform: `translate3d(${xPortrait}px, ${yPortrait}px, 0)`,
                     transformOrigin: 'bottom center',
                     borderRadius: borderRadiusPortrait,
-                    overflow: progress > 0.1 ? 'hidden' : 'visible',
-                    aspectRatio: aspectRatioPortrait,
-                    isolation: 'isolate',
-                    WebkitMaskImage: progress > 0.1 ? 'radial-gradient(white, black)' : 'none',
-                    pointerEvents: heroOpacity === 0 ? 'none' : 'auto'
+                    overflow: progress > 0.05 ? 'hidden' : 'visible',
+                    aspectRatio: aspectRatioPortrait
                   }}
                 >
                   <motion.img
@@ -634,17 +630,7 @@ export const PortfolioPage: React.FC = () => {
                     <img
                       src="sachin-hero.png"
                       alt={profileData.name}
-                      style={{
-                        opacity: aboutOpacity,
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        objectPosition: 'bottom center',
-                        zIndex: 2
-                      }}
+                      className={styles.themeBAboutMobileImage}
                     />
                     <div className={styles.themeBAboutImagePlaceholder} />
                   </div>
