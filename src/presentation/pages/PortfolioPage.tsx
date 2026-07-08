@@ -580,7 +580,9 @@ export const PortfolioPage: React.FC = () => {
                     overflow: progress > 0.1 ? 'hidden' : 'visible',
                     aspectRatio: aspectRatioPortrait,
                     isolation: 'isolate',
-                    WebkitMaskImage: progress > 0.1 ? 'radial-gradient(white, black)' : 'none'
+                    WebkitMaskImage: progress > 0.1 ? 'radial-gradient(white, black)' : 'none',
+                    opacity: progress >= 0.9 ? 0 : 1,
+                    pointerEvents: progress >= 0.9 ? 'none' : 'auto'
                   }}
                 >
                   <motion.img
@@ -631,7 +633,18 @@ export const PortfolioPage: React.FC = () => {
                     <img
                       src="sachin-hero.png"
                       alt={profileData.name}
-                      className={styles.themeBAboutMobileImage}
+                      style={{
+                        opacity: isMobile ? 1 : (progress >= 0.9 ? 1 : 0),
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        objectPosition: 'bottom center',
+                        zIndex: 2,
+                        transition: 'opacity 0.15s ease-out'
+                      }}
                     />
                     <div className={styles.themeBAboutImagePlaceholder} />
                   </div>
