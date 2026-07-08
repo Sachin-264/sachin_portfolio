@@ -144,6 +144,7 @@ export const PortfolioPage: React.FC = () => {
   const xPortrait = isMobile ? 0 : (progress * 280); // Shifts right
   const yPortrait = isMobile ? 0 : (progress * 565); // Translates down
   const borderRadiusPortrait = isMobile ? '2rem' : `${progress * 2}rem`;
+  const aspectRatioPortrait = isMobile ? 0.93 : (0.85 + progress * 0.08);
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -576,7 +577,8 @@ export const PortfolioPage: React.FC = () => {
                     transform: `translate3d(${xPortrait}px, ${yPortrait}px, 0) scale(${scalePortrait})`,
                     transformOrigin: 'bottom center',
                     borderRadius: borderRadiusPortrait,
-                    overflow: progress > 0.1 ? 'hidden' : 'visible'
+                    overflow: progress > 0.1 ? 'hidden' : 'visible',
+                    aspectRatio: aspectRatioPortrait
                   }}
                 >
                   <motion.img
