@@ -571,7 +571,7 @@ export const PortfolioPage: React.FC = () => {
                 <motion.div
                   className={styles.themeBPortraitContainer}
                   initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
+                  animate={{ opacity: progress >= 0.9 ? 0 : 1 }}
                   transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] as [number, number, number, number], delay: 0.2 }}
                   style={{
                     transform: `translate3d(${xPortrait}px, ${yPortrait}px, 0) scale(${scalePortrait})`,
@@ -581,7 +581,6 @@ export const PortfolioPage: React.FC = () => {
                     aspectRatio: aspectRatioPortrait,
                     isolation: 'isolate',
                     WebkitMaskImage: progress > 0.1 ? 'radial-gradient(white, black)' : 'none',
-                    opacity: progress >= 0.9 ? 0 : 1,
                     pointerEvents: progress >= 0.9 ? 'none' : 'auto'
                   }}
                 >
