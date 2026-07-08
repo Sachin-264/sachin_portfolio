@@ -712,10 +712,10 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ project, t
 
               {isSubmitSuccess ? (
                 <div className={styles.contactModalSuccess}>
-                  <div className={styles.contactSuccessIcon}>✓</div>
-                  <h3 className={styles.contactSuccessTitle}>Message Sent!</h3>
+                  <div className={styles.contactSuccessIcon}>✉</div>
+                  <h3 className={styles.contactSuccessTitle}>Email App Opened</h3>
                   <p className={styles.contactSuccessMsg}>
-                    Thank you for reaching out, {contactName || 'there'}. I will review your message and get back to you shortly!
+                    Your pre-filled inquiry is ready! Please review the email drafts in your mail client (e.g. Gmail) and click <strong>"Send"</strong> to deliver it to <strong>msachinmishra8@gmail.com</strong>.
                   </p>
                   <button 
                     className={styles.contactModalSubmit} 
@@ -724,7 +724,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ project, t
                       resetContactForm();
                     }}
                   >
-                    Close
+                    Done
                   </button>
                 </div>
               ) : (
